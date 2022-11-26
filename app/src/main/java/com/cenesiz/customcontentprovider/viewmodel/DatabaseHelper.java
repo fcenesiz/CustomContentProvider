@@ -12,8 +12,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static final int VERSION = 1;
     private static final String DATABASE_NAME = "CALORIES";
-    private static String ONE_PEACE = "1 Peace";
-    private static String HUNDRED_GRAM = "100 gr.";
+    private static final String ONE_PEACE = "1 Peace";
+    private static final String HUNDRED_GRAM = "100 gr.";
 
     public DatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, VERSION);
@@ -40,7 +40,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         );
 
         foods.forEach(food -> {
-            db.execSQL("INSERT INTO CALORIES(NAME, AMOUNT, CALORIE) VALUES(" + food.getName() + "," + food.getAmount() + "," + food.getCalorie() + ")");
+            db.execSQL("INSERT INTO CALORIES(NAME, AMOUNT, CALORIE) VALUES('" + food.getName() + "','" + food.getAmount() + "'," + food.getCalorie() + ")");
         });
 
     }
