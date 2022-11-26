@@ -1,0 +1,5 @@
+## Steps
+    • Create SQLite Database
+    • 
+    •
+    •
