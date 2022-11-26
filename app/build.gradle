@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    compileSdk 32
 
     viewBinding{
         enabled = true
@@ -12,7 +12,7 @@ android {
     defaultConfig {
         applicationId "com.cenesiz.customcontentprovider"
         minSdk 26
-        targetSdk 33
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 

@@ -18,6 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        
+        <provider
+                android:authorities="com.cenesiz.customcontentprovider"
+                android:name=".viewmodel.FoodProvider"
+                android:exported="true"
+                android:grantUriPermission="true"/>
     </application>
 
 </manifest>
