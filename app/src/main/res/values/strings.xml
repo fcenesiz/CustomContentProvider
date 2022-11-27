@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CustomContentProvider</string>
+    <string name="adds_new_food">adds new food</string>
 </resources>

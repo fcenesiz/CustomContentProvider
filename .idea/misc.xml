@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Fatih/Development/work_spaces/android_projects/CustomContentProvider/app/src/main/res/layout/activity_main.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Fatih/Development/work_spaces/android_projects/CustomContentProvider/app/src/main/res/layout/item_food.xml" value="0.33" />
+        <entry key="..\:/Users/Fatih/Development/work_spaces/android_projects/CustomContentProvider/app/src/main/res/layout/list_food.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Fatih/Development/work_spaces/android_projects/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
       </map>
     </option>

@@ -50,4 +50,13 @@ public class Food {
     public void setCalorie(int calorie) {
         this.calorie = calorie;
     }
+
+    @Override
+    public String toString() {
+        return "Food{" +
+                "name='" + name + '\'' +
+                ", amount='" + amount + '\'' +
+                ", calorie=" + calorie +
+                '}';
+    }
 }
