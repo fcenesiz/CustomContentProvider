@@ -15,6 +15,12 @@
     • PopupMenu
 
 ### ContentProvider
+    • content://com.cenesiz.customcontentprovider.viewmodel/FoodProvider/FOODS
+        • content                                       -> content provider prefix
+        • com.cenesiz.customcontentprovider.viewmodel   -> content authority
+        • FoodProvider                                  -> specific data
+        • FOODS                                         -> database name
+
 
 ```groovy
 <provider
