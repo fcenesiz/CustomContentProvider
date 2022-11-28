@@ -4,6 +4,8 @@
     • Register FoodProvider inside Manifest file
     • Access your FoodProvider
 
+![](img_list.png ) ![](img_update.png )
+
 ## Used ones
     • ViewBinding
     • ContentProvider
