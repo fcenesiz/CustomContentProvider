@@ -1,6 +1,11 @@
 package com.cenesiz.customcontentprovider.model;
 
-public class Food {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import java.io.Serializable;
+
+public class Food implements Parcelable {
     private int id;
     private String name;
     private String amount;
@@ -18,6 +23,15 @@ public class Food {
         this.amount = amount;
         this.calorie = calorie;
     }
+
+    protected Food(Parcel in) {
+        id = in.readInt();
+        name = in.readString();
+        amount = in.readString();
+        calorie = in.readInt();
+    }
+
+
 
     public int getId() {
         return id;
@@ -59,4 +73,30 @@ public class Food {
                 ", calorie=" + calorie +
                 '}';
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(id);
+        parcel.writeString(name);
+        parcel.writeString(amount);
+        parcel.writeInt(calorie);
+    }
+
+    public static final Creator<Food> CREATOR = new Creator<Food>() {
+        @Override
+        public Food createFromParcel(Parcel in) {
+            return new Food(in);
+        }
+
+        @Override
+        public Food[] newArray(int size) {
+            return new Food[size];
+        }
+    };
+
 }

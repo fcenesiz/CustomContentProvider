@@ -12,9 +12,9 @@ public class FoodProvider extends ContentProvider {
 
     public static final String PROVIDER_NAME = "com.cenesiz.customcontentprovider.viewmodel/FoodProvider";
     public static final String URL = "content://" + PROVIDER_NAME + "/" + DatabaseHelper.DATABASE_NAME;
-    public static final String CONTENT_URI = String.valueOf(Uri.parse(URL));
+    public static final Uri CONTENT_URI = Uri.parse(URL);
 
-    public static final String ID = "_id";
+    public static final String _ID = "_id";
     public static final String NAME = "NAME";
     public static final String AMOUNT = "AMOUNT";
     public static final String CALORIE = "CALORIE";

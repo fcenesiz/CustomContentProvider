@@ -9,11 +9,13 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.CustomContentProvider">
-
-
-
+        <activity
+                android:name=".view.EditFoodActivity"
+                android:label="Edit Food"
+                android:exported="false"/>
         <activity
                 android:name=".view.MainActivity"
+                android:label="Foods"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -24,12 +26,10 @@
 
         <provider
                 android:name=".viewmodel.FoodProvider"
-                android:authorities="com.cenesiz.customcontentprovider"
+                android:authorities="com.cenesiz.customcontentprovider.viewmodel"
                 android:exported="true"
                 android:grantUriPermissions="true">
-
         </provider>
     </application>
-
 
 </manifest>
