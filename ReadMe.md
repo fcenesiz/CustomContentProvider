@@ -19,6 +19,5 @@
         android:name=".viewmodel.FoodProvider"
         android:authorities="com.cenesiz.customcontentprovider.viewmodel"
         android:exported="true"
-        android:grantUriPermissions="true">
-</provider>
+        android:grantUriPermissions="true"/>
 ```
